@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DelimitedFileConnection Encoding="ISO-8859-15" FieldSeparatorValue="&quot;;&quot;" FilePath="C:/Users/brahi/Desktop/DataSkillsValue/ARSE/Dev/DATA_SOURCES/CleanedData/DATA_VENTES_SONIDEP.csv" FirstLineCaption="true" HeaderValue="1" RowSeparatorValue="&quot;\n&quot;" Server="Localhost 127.0.0.1" UseHeader="true" dataPackage="_-D8f4DJJEeuQQtMdIm3i2A" name="DATA_VENTES_SONIDEP" xmi:id="_-Dyu4DJJEeuQQtMdIm3i2A"/>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_-Dyu4DJJEeuQQtMdIm3i2A" name="default" xmi:id="_-D8f4DJJEeuQQtMdIm3i2A">
+    <ownedElement id="_jjnb0DJJEeuQQtMdIm3i2A" label="metadata" xmi:id="_-D8f4TJJEeuQQtMdIm3i2A" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="Periode" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_-D8f4jJJEeuQQtMdIm3i2A" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="localite" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_-D8f4zJJEeuQQtMdIm3i2A" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Type_Produit" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_-D8f5DJJEeuQQtMdIm3i2A" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ventes" length="50" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_-D8f5TJJEeuQQtMdIm3i2A" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
