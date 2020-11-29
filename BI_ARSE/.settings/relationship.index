@@ -5,6 +5,14 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_-C5XADJJEeuQQtMdIm3i2A",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_MOXbkDJoEeuql7enUKx34Q",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "DataOperation",
     "version" : "Latest",
     "type" : "routine"
@@ -44,5 +52,13 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_-C5XADJJEeuQQtMdIm3i2A - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_ventes_sonidep",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 } ]
