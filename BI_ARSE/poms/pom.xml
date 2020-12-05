@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/extract_data_ventes_sonidep_0.1</module>
     <module>jobs/process/extract_data_abonne_nigelec_0.1</module>
+    <module>jobs/process/load_data_abonne_nigelec_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
