@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NldDKUkP6zUeanJDxemIB6/Xr15VbygOXqXyXXVP"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TYOCAYVZPePCElUQCr1QDCoVsJAx81I47QdSRXJt"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vaUK7yF9pALHELgTDn4lStkT13gn8PWbtDAVifkf"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5dNzmGACFcH6zkqbRSYy3X+E5NvRnQaN0fK1p+lR"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -218,28 +218,28 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="stg_act_soraz" name="load">
-      <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="TYPE_ACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="PETROLE_BRUT" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PETROLE_BRUT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="ESSENCE" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ESSENCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="GAZOIL" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="GAZOIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="LPG" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="LPG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="SLURRY" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SLURRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="KEROZENE" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="KEROZENE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="DATE_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -257,14 +257,14 @@
         <mapperTableEntries expression="TalendDate.getCurrentDate() " name="var2" nullable="true" type="id_Date"/>
       </varTables>
       <outputTables name="load" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression=" " name="PERIODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression=" " name="PERIODE" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.Type " name="TYPE_ACT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PETROLE_BRUT" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row1.Essence" name="ESSENCE" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="GAZOIL" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row1.LPG" name="LPG" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row1.Slurry" name="SLURRY" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row1.e " name="KEROZENE" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="PETROLE_BRUT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Essence" name="ESSENCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GAZOIL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.LPG" name="LPG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Slurry" name="SLURRY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.e " name="KEROZENE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.var2 " name="DATE_CHARGEMENT" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="Var.var1 " name="SOURCE" nullable="true" type="id_String"/>
       </outputTables>
@@ -292,10 +292,12 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;dwharse&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;arse_01@dwharse&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:58RijoHJKuVhWhUczqTJotSMUWWfedDH7gwUdzN2mOxlJVqgdSwtMKaNjthS5Rg="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZxGdMo0Lw/kUw8GApDHNcEjIoDGQDPH1/bbqTNJjz1QBN+nXghiz+APn72IpGrs="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_act_soraz&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_MOXbkDJoEeuql7enUKx34Q - stg_act_soraz"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -373,28 +375,28 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="stg_act_soraz" name="tDBOutput_1">
-      <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="TYPE_ACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="PETROLE_BRUT" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PETROLE_BRUT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="ESSENCE" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ESSENCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="GAZOIL" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="GAZOIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="LPG" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="LPG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="SLURRY" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SLURRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="KEROZENE" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="KEROZENE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="DATE_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -406,28 +408,28 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="stg_act_soraz" name="REJECT">
-      <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="TYPE_ACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="PETROLE_BRUT" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="PETROLE_BRUT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="ESSENCE" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ESSENCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="GAZOIL" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="GAZOIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="LPG" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="LPG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="SLURRY" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SLURRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="KEROZENE" nullable="true" pattern="" precision="2" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+      <column comment="" key="false" length="100" name="KEROZENE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="DATE_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
@@ -454,13 +456,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d821b4d0-5c76-4fbc-9f5e-488d1576c70b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DEeDWNmoFvk8+c6epu0Jdm/ndMnbgbOnT54L/8U/ETEd5UhoORqKAwjtdWHk0eaesxLfWGRj5ndx&#13;
-SL8nR1ASRQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7b8946c5-e236-4867-9f24-18b17ea265c2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IIzFoSLkxzkwLSO9zfWqoTaNOzQZG+UPZqN47gz7jAbtRP/TDWIuMQAIdkcfpL/eGF4wO4feDocI&#13;
-o0uuvu4DBw==</DigestValue></Reference></SignedInfo><SignatureValue>TMxUotvdwYatg2EhyM6QrYEfKWLz8ZHXL9fruW4ANXjRngvI0KIddqWhdRNkOq2ZS6yXtWLUbHjL&#13;
-NbbRaRzfhzw7hpCtUPboOPdJ9nnvT0d3uUOhH9fh33ysxXEqrvgvvVFAirL+1v5xRLdSSs2chvLO&#13;
-8pMYDJ76FDKdHz0jsLZFIcodQhwV2EnuD0Pw5qKGreTpltAI5LnjUneIIR6yBkrhV8dANmdiaMXe&#13;
-AxQl7bvu/ARidM1EAOML8gMZj4cb3dplnp7PJidmoj6PLwGml/J/hYBy2/GlxxLJSbo1ubt0wm0q&#13;
-wPoQumqsrw6stfpKTiBS4KM/J8g2Hutdw29taQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b7cfa70e-c0c7-4d21-83fe-e7bd1d3d8e94"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0AqopkjZ3pzhZTXgQV6ak1FUW4CL0mlseik8qVhnecUV2vW8chXVxkAELWD7pG+bd0RH8XFvFpVS&#13;
+2OyqgsNb4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e990962f-8577-47ed-bc90-21aef5f91f08"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WG0SrspoXKvtq1OvRSsOzYMZmhWjcocsDGQnFvj/su+lTkI4Z2553Sgy1AZo2cHRtIUhDOuMiTvt&#13;
+lCc4GYEVDQ==</DigestValue></Reference></SignedInfo><SignatureValue>oyWpSDHr6kcZ6ylmmUqEj0ddQ6Q0tkY+5tXxgJ2iSJc/Lqr9TOEjYp1wNriP0sXpQwnvBepvQDHn&#13;
+bPAG9A70SrMd7se7ojPR0gkalS0YgWfrbYo5Y8Q7tKhkM7GTIxb3TyFO2ADu9gNmj5HbnmPj/lQb&#13;
+DKfrz6T3uKe1uTXrYBDx4JFzm5XzF/75Q1PUpWv8wv6jDBH344WDhQndRJAX75mgnznGdktiog6g&#13;
+b+ZRsITAnJasuPZj/IPuS6tBZ6z1tTke8kH76c00KAtQSQI54okLOCXGAwnoxD4vpEyiXlYrugg8&#13;
+KHJVQTGGbSbTpD4x+m3g4zCvsDpLIs393/VJMQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -482,4 +484,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7b8946c5-e236-4867-9f24-18b17ea265c2" Target="#_d821b4d0-5c76-4fbc-9f5e-488d1576c70b"><Timestamp>2020-12-08 23:15:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e990962f-8577-47ed-bc90-21aef5f91f08" Target="#_b7cfa70e-c0c7-4d21-83fe-e7bd1d3d8e94"><Timestamp>2020-12-08 23:18:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

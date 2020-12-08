@@ -119,6 +119,10 @@
     "id" : "_HdQiMDmpEeu5pYY5mX2BWA - metadata",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_act_soraz",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
