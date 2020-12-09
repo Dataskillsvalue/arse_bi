@@ -182,10 +182,6 @@
     "id" : "_Fap9wDpYEeuW692iQ7ilfw - metadata",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonidep_essence",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
