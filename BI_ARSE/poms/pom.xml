@@ -16,6 +16,7 @@
     <module>jobs/process/extract_data_act_nigelec_0.1</module>
     <module>jobs/process/extract_data_act_soraz_0.1</module>
     <module>jobs/process/extract_data_saidi_saifi_nigelec_0.1</module>
+    <module>jobs/process/extract_data_act_essence_sonidep_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
