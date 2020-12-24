@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -40,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:F+pa9UXtOWLkPXFQW+10rgF9W+oj858gPMFGONCy"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:SwMCYnlG5tlLCXiS2P76Slrg50ARLjf7qOgMbQcJ"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -75,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hTqB5RGGbPM7/YWtG8nbB36NSTciYppqpQLVXgXo"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qzlRVqaO9D8/mFvEKBLxgtq68Za8kiZCbqWyNso0"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -105,13 +107,269 @@
     <routinesParameter id="_03EykDJHEeuQQtMdIm3i2A" name="TalendStringUtil"/>
     <routinesParameter id="_02s_IDJHEeuQQtMdIm3i2A" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9a362f39-e814-4e42-bdcc-5666924c0d65"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>znX6+3TKAq3NUBDHpHQkP6ryEVRi/r8Ht+La1heTmgFzbWLbhfy5SUui16aCbUpKr7tsde67U3LD&#13;
-xzDP1UjK9g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1be22c39-5a97-4c33-a59f-d73d395e7264"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o18c9taii1Ihrinrp5Ih1V5EVECGHEiJv2jaXEkNoVimUV3WljDspjmYlsHqgOrDv6UkrNoNsQAu&#13;
-YJ0CPUs0ZQ==</DigestValue></Reference></SignedInfo><SignatureValue>iO16LtbRazf5Ss5mf2OptALHn1NlAWmtFRAQUlc7oxf8uRRzN28MXs2u05CTTU4hiJrttGSnNeCe&#13;
-+mV8Av3Jh370jqXxQt/Jjgr4u0q3n2pPJCL+LEabAoCrS3gJIqKkTWTY/VFoch+MW1+Mn9NHYpAw&#13;
-vnzz+1YS1mXfItVHk6AOA9YjHbFXSO28a4aAxhXcrPFcb0gYPsuX60X1i5fH2Wd6kSiEWJxi6xFt&#13;
-7ywFSj+ZZjAg5sL6XiWpsWOonE3hyycnCSD0eWmeoMUSYX+8TcUkGAZyQrYuJ0vKecLBRUhu21Cp&#13;
-CxNY8JGiqr4PaGX6I+0l8vfUWmtOjLy6efzvLQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_MOXbkDJoEeuql7enUKx34Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;dwharse.mysql.database.azure.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;dwharse&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;arse_01@dwharse&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+qb6iGFgAGhkvSoxVPKzHcq3T57K6ISdplVU3bz42wTn7UHtTr/Y288BckeTWYY="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_MOXbkDJoEeuql7enUKx34Q - stg_saidi_saifi_nigelec"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_saidi_saifi_nigelec&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `stg_saidi_saifi_nigelec`.`VILLE`, &#10;  `stg_saidi_saifi_nigelec`.`DATE`, &#10;  `stg_saidi_saifi_nigelec`.`SAIDI`, &#10;  `stg_saidi_saifi_nigelec`.`SAIFI`, &#10;  `stg_saidi_saifi_nigelec`.`DT_CHARGEMENT`, &#10;  `stg_saidi_saifi_nigelec`.`SOURCE`&#10;FROM `stg_saidi_saifi_nigelec`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;serverTimezone=UTC&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="VILLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAIDI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAIFI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_CHARGEMENT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_saidi_saifi_nigelec" name="tDBInput_1">
+      <column comment="" key="false" length="100" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIDI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIFI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DT_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SOURCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_AN3_AEYNEeudpPfbrP7eFA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dwh_saidi_saifi_nigelec" name="load">
+      <column comment="" key="false" length="100" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIDI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIFI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DT_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SOURCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="load" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.VILLE" name="VILLE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATE" name="DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.SAIDI" name="SAIDI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.SAIFI" name="SAIFI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.DT_CHARGEMENT" name="DT_CHARGEMENT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.SOURCE" name="SOURCE" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="VILLE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SAIDI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="SAIFI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DT_CHARGEMENT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SOURCE" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_MOXbkDJoEeuql7enUKx34Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;dwharse.mysql.database.azure.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;dwharse&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;arse_01@dwharse&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tjCIPEguZkU8bTE+vTL+3Br6k03ASXb2PKFsWVSM4NmwzddYcW0RVNZV9EAXgEc="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dwh_saidi_saifi_nigelec&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_MOXbkDJoEeuql7enUKx34Q - dwh_saidi_saifi_nigelec"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;serverTimezone=UTC&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="VILLE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAIDI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAIFI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_CHARGEMENT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dwh_saidi_saifi_nigelec" name="tDBOutput_1">
+      <column comment="" key="false" length="100" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIDI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIFI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DT_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SOURCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="dwh_saidi_saifi_nigelec" name="REJECT">
+      <column comment="" key="false" length="100" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIDI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SAIFI" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DT_CHARGEMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SOURCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="load" lineStyle="0" metaname="load" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="load"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0a4ecfab-2c74-4cc4-b709-99d0280cc50a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bLEw9mzUeCefYkWBs+JJmMbkJNaAv91eIRKcH9XN7iqt+lNEjBd99SX0GQD0IvoLlLZ8ZuS/hcaD&#13;
+pGubKZesrw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b0092d5f-7ee6-483b-a5b6-826a49ab9443"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zoXsAKAoH2iN3XKtigXc9rVybUGDOIOz0IIvGdEu172T0rzeH+PFPWU3xqIM0z486danVj+Hj6/G&#13;
+HNIekwWZmg==</DigestValue></Reference></SignedInfo><SignatureValue>c1/5E0EBvAhH/VMG20iSMEuCoIQtuyOrxIcKOYujXMOE0BWmQ6MIjzl4iDSHm0g2gah0XcU+JlgF&#13;
+rzNi+u/CGZEO+TThUABe4l+9rYZH9Z3ec1PeW1pbba/1OsWJQDKQEmr6/JfcBZoKJjgNMdvYccJe&#13;
+uD/V4Q/T2muFCytBh/SmTrxRBtELSuegr1G8AWb0a1YUVaQyti0f1KnEvRxfBcYqoncQeFJKNmvd&#13;
+vf2dBla15bPLtIBayAWsR2dU9tOiynOh0mbi/P7r8oHoeFzFJvZWYRDwgUwsm6MVzicoCvE8otgl&#13;
+5P6x/m46LxFRGeU76CeqiGI/kBsk0k1sycpLtw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -133,4 +391,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1be22c39-5a97-4c33-a59f-d73d395e7264" Target="#_9a362f39-e814-4e42-bdcc-5666924c0d65"><Timestamp>2020-12-24 17:25:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b0092d5f-7ee6-483b-a5b6-826a49ab9443" Target="#_0a4ecfab-2c74-4cc4-b709-99d0280cc50a"><Timestamp>2020-12-24 17:26:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
