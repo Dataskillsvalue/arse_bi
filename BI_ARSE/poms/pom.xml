@@ -23,6 +23,7 @@
     <module>jobs/process/extract_data_sonichar_ventes_0.1</module>
     <module>jobs/process/extract_data_sonidep_ventes_0.1</module>
     <module>jobs/process/load_data_sonidep_ventes_0.1</module>
+    <module>jobs/process/extract_data_sonidep_essence_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
