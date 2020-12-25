@@ -127,7 +127,7 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_HdQiMDmpEeu5pYY5mX2BWA",
+    "id" : "_4ZXM4EboEeudpPfbrP7eFA",
     "version" : "Latest",
     "type" : "property"
   }, {
@@ -175,11 +175,11 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "_HdQiMDmpEeu5pYY5mX2BWA - metadata",
+    "id" : "_4ZXM4EboEeudpPfbrP7eFA - metadata",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_act_soraz",
+    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonichar_prod",
     "version" : "Latest",
     "type" : "schema"
   } ]
