@@ -53,10 +53,6 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonidep_ventes",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_PZKpIEbsEeudpPfbrP7eFA - metadata",
     "version" : "Latest",
     "type" : "schema"
