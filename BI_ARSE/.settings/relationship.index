@@ -233,10 +233,6 @@
     "id" : "_MOXbkDJoEeuql7enUKx34Q - dwh_sonidep_ventes",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonidep_ventes",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
