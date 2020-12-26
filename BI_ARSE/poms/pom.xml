@@ -17,7 +17,6 @@
     <module>jobs/process/extract_data_act_essence_sonidep_0.1</module>
     <module>jobs/process/extract_data_act_gaz_sonidep_0.1</module>
     <module>jobs/process/load_data_nigelec_prod_0.1</module>
-    <module>jobs/process/load_data_saidi_saifi_nigelec_0.1</module>
     <module>jobs/process/extract_data_sonichar_ventes_0.1</module>
     <module>jobs/process/extract_data_sonidep_ventes_0.1</module>
     <module>jobs/process/load_data_sonidep_ventes_0.1</module>
@@ -31,6 +30,7 @@
     <module>jobs/process/load_data_soraz_prod_0.1</module>
     <module>jobs/process/extract_data_min_bilan_ener_0.1</module>
     <module>jobs/process/load_data_nigelec_abonne_0.1</module>
+    <module>jobs/process/load_data_nigelec_saidi_saifi_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
