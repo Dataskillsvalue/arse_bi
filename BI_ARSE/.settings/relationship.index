@@ -761,6 +761,10 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
+    "id" : "_MOXbkDJoEeuql7enUKx34Q - dwh_sonichar_prod",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonichar_prod",
     "version" : "Latest",
     "type" : "schema"
