@@ -32,6 +32,7 @@
     <module>jobs/process/load_data_nigelec_abonne_0.1</module>
     <module>jobs/process/load_data_nigelec_saidi_saifi_0.1</module>
     <module>jobs/process/extract_data_min_bilan_energetique_0.1</module>
+    <module>jobs/process/load_data_mini_bilan_energetique_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
