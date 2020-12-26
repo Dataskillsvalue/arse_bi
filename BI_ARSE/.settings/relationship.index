@@ -410,7 +410,7 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_4ZXM4EboEeudpPfbrP7eFA",
+    "id" : "_HdQiMDmpEeu5pYY5mX2BWA",
     "version" : "Latest",
     "type" : "property"
   }, {
@@ -458,11 +458,11 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "_4ZXM4EboEeudpPfbrP7eFA - metadata",
+    "id" : "_HdQiMDmpEeu5pYY5mX2BWA - metadata",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonichar_prod",
+    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_soraz_prod",
     "version" : "Latest",
     "type" : "schema"
   } ]
