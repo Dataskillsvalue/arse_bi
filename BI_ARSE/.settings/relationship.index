@@ -108,6 +108,10 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
+    "id" : "_MOXbkDJoEeuql7enUKx34Q - dwh_sonidep_gaz",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_sonidep_gaz",
     "version" : "Latest",
     "type" : "schema"
