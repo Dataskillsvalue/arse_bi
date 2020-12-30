@@ -1257,10 +1257,6 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "_MOXbkDJoEeuql7enUKx34Q - stg_min_bilan_energ",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_ze62QEdjEeudpPfbrP7eFA - metadata",
     "version" : "Latest",
     "type" : "schema"
