@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TBwLEVTXwE5kiuyymTFsIpzbQiEBTqZD1eawEkhF"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:P3TGjRwY1t+P8ryebDf3IN+fx4YDi2fEyGn1D1/D"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dcyevdIekm+7BFAuObW4942jFlSIkNKtW7RKq2cU"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vCL05KyuHiYLLx6iaEOkwbPPdKbwkS6EavJqDse1"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -113,12 +113,12 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ze62QEdjEeudpPfbrP7eFA"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/brahi/Desktop/DataSkillsValue/ARSE/Dev/DATA_SOURCES/CleanedData/data_bilan_ener.csv&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
@@ -131,7 +131,7 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="RANDOM" show="false" value="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
     <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
@@ -148,7 +148,7 @@
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="SPLITRECORD" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="INDICATEUR"/>
@@ -167,7 +167,7 @@
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
       <column comment="" key="false" length="38" name="INDICATEUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="79" name="LABEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="VALEUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="VALEUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="10" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="ANNEE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
@@ -200,7 +200,7 @@
       <column comment="" key="false" length="255" name="INDICATEUR_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="INDICATEUR_VAL" nullable="true" pattern="" precision="10" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="50" name="INDICATEUR_VAL" nullable="true" pattern="" precision="10" sourceType="FLOAT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -217,21 +217,21 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Float.parseFloat(StringHandling.FTRIM(row1.VALEUR) ) " name="val" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression=" " name="var2" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="&quot;MINISTERE ENERGIE&quot; " name="var1" nullable="true" type="id_String"/>
       </varTables>
       <outputTables name="load" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.INDICATEUR " name="INDICATEUR_CD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="INDICATEUR_DESC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.val " name="INDICATEUR_VAL" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="" name="PERIODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DATE_CHARGEMENT" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="SOURCE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.LABEL " name="INDICATEUR_DESC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression=" row1.VALEUR " name="INDICATEUR_VAL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ANNEE " name="PERIODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Date " name="DATE_CHARGEMENT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.var1 " name="SOURCE" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="INDICATEUR" nullable="true" type="id_String"/>
         <mapperTableEntries name="LABEL" nullable="true" type="id_String"/>
-        <mapperTableEntries name="VALEUR" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="VALEUR" nullable="true" type="id_String"/>
         <mapperTableEntries name="ANNEE" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
@@ -248,7 +248,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;dwharse&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;arse_01@dwharse&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uQb/xlWXYYfF9ss4Am7JgcEXYVB37TLuhAIOdl1EKpAyqYbsvDEZd2ySvSVF3gM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8/jFE8PTUMMTJp99HDEIH2G1nQOfADNtrE80Mo673XcojStqnzOKzrZ4p+IGTVs="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_min_bilan_energ&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -315,7 +315,7 @@
       <column comment="" key="false" length="255" name="INDICATEUR_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="INDICATEUR_VAL" nullable="true" pattern="" precision="10" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="50" name="INDICATEUR_VAL" nullable="true" pattern="" precision="10" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -336,7 +336,7 @@
       <column comment="" key="false" length="255" name="INDICATEUR_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="INDICATEUR_VAL" nullable="true" pattern="" precision="10" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+      <column comment="" key="false" length="50" name="INDICATEUR_VAL" nullable="true" pattern="" precision="10" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PERIODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -366,13 +366,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_93686f5d-4d5a-40a4-8cd9-2f0fa16893fc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6ZLVFOeIr1nBa8Wib/Hl8O4VB4vJ4C+4cK8JYwTQnZ1z/w4pptG5vnQo8qk+XLtqXQpHTwzN6GkU&#13;
-rAyBWChnEQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9841c12c-ead5-439b-b2d7-8e7d022a0514"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MaEC3OpddcbjJBV+angMjtKkGICoECYcG61vYNXldn6KPsO4sACzSA+aAWOi1UxSJawG1pBrI6Mv&#13;
-GxzZkYQo7Q==</DigestValue></Reference></SignedInfo><SignatureValue>QiZQP7jMmv6yYU5uNfp92N3a6zp9l3cJTWbvnHJ0Tr8MWylXxgBXMObwi7/+KqJh5HyaRfyUon0c&#13;
-3BBSwv01hwgGX+BR3cNDPPaaFEmaX79g2Muk0juqjKImaWSI8Mbr8UaqGrKXVFoqMBMlhr/YmB4+&#13;
-AvLVvhVU2Maei5ivQzX539rB1xPSb7whgjwO1QNLRIO27Uv5u5hZO1XlF2HWiQvNAmAKdqWJvx1G&#13;
-p/s/J56cKWjReD+uyZaShM6IDFGJ4cg0EAUAgXbtGGnD3GrbyKU4qFXZKy4mM0PItvgLXDZ8jX4C&#13;
-58r64akgeA7PV6CZhTqH6uS9453TPj8qX4+nUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f72e6973-7ff5-48ee-bc50-feaf40109e27"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vvU5xREsNmIcl3KPbdd5UqzLFAWSdObSralOJhIL/t7OO3wT2BniXsra5C2FZcR3O4CJshAPY8xp&#13;
+baMPv2snIg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_03df3aaf-78dd-45e0-a86d-e75df081ac14"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8uQqbHRcmUYZE2NPZqtBrxeiNPF1q2HYkprqjYktu8qmUFjeVaLdI6W3Ic0bTi1Ap2n6OU0Xe06o&#13;
+IyzR9cjH1Q==</DigestValue></Reference></SignedInfo><SignatureValue>EClLpD1v2E3l7O2L5WNPkVMQI6HLYYFRdhtJkChTPgdlmBplNCBJOAfPxs4AkVN+7gI10qtv5KGi&#13;
+dsWEilAli404we0BBApH8K5apuuJDSWParz5pqg9N1zYDaDhziTadEpOdMs7+SORqbwHlqcO85VU&#13;
+gLS3G0TFEs7+1gV91ZoJo7c0ely/zXVjcY0yGdrybj5CYwl5fXqHdYsUBAsZ+ukMsDKcHTMCYpqy&#13;
+7SMTNZm4z7esHgkJlRIgLJpEi+6KjzWYBhrmPTmlSqvloridEPlMDkRkhGZSNu9Xy0CUCTeo8z5K&#13;
+HI9piwK5+cUT0q2Mry2qInhPpd41UFOV/JtwNA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -394,4 +394,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9841c12c-ead5-439b-b2d7-8e7d022a0514" Target="#_93686f5d-4d5a-40a4-8cd9-2f0fa16893fc"><Timestamp>2020-12-30 17:14:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_03df3aaf-78dd-45e0-a86d-e75df081ac14" Target="#_f72e6973-7ff5-48ee-bc50-feaf40109e27"><Timestamp>2020-12-30 17:21:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
